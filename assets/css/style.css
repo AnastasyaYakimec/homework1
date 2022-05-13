@@ -4,9 +4,12 @@
 
 .wrapper {
     position: relative;
+    width: 850px;
+    border: 1px solid white;
     background-color: rgb(9, 0, 9);
-    color: aliceblue;
-
+    color: white;
+    /* color: aliceblue;
+    background-image: url(../icon/foto\ girl\ v\ vr.png); */
 }
 
 .header {
@@ -20,6 +23,7 @@
 .girl-v-vr {
     height: 250px;
     width: 250px;
+
 }
 
 .logo {
