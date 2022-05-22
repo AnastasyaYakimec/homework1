@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+.container {
+    border: 2px solid black;
+    max-width: 854px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: black;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
+    position: relative;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header_logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: 'IM FELL Great Primer SC ';
+}
+
+.ellipse3 {
+    position: absolute;
+    width: 100%;
+    max-width: 354px;
+    top: 0;
+    left: 30px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list_item:not(:last-child) {
+    margin-right: 34px;
+}
+
+.nav-list_link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: 'Inter';
+    color: white;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.nav-list_link:hover {
+    font-weight: 500;
+    color: #DF308D;
+}
+
+.nav-list_link:hover::after {
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 10px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+
+.main {
+    width: 100%;
+    max-width: 738px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main-img {
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.header-title {
+    text-decoration: underline;
+    font-size: 21px;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.header-text {
+    font-size: 18px;
+    margin: 20px 0;
+    color: white;
+}
+
+.btn-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 13px 37px;
+    border-radius: 3px;
+    border: hidden;
+    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+    font-family: "inter";
+    font-weight: 700;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    /* width: 20%; */
+    padding: 13px 37px;
+    border-radius: 3px;
+    border: hidden;
+    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+    font-family: "inter";
+    font-weight: 700;
+    color: white;
+
+}
+
+.ellipse2 {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: rotate(180deg);
+}
+
+.ellipse1 {
+    position: absolute;
+    top: 40%;
+    width: 30%;
+}

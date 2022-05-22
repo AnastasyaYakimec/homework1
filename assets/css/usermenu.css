@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+
+.user-menu{
+box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+max-width: 304px;
+background-color: #09010E;
+color: white;
+font-family: 'inter';
+font-size: 16px;
+font-style:regular ;
+}
+.header{
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+padding: 12px;
+}
+.user-menu-title{
+   color: white; 
+}
+.user-menu-vector{
+   width: 12px; 
+   height: 7px;
+
+}
+.menu{
+list-style-type: none;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+.menu-item{
+padding-bottom: 5px;
+
+}

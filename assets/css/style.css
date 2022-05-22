@@ -10,30 +10,93 @@
     box-sizing: border-box;
     overflow: hidden;
 }
-.main{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
+
 .container {
     padding: 0 15px;
     max-width: 854px;
     margin: 0 auto;
     align-self: center;
 }
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header_logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: 'IM FELL Great Primer SC ';
+}
+
+ .ellipse3 {
+     position: absolute;
+     width: 100%;
+     max-width: 354px;
+     top: 0;
+     left: 30px;
+ }
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list_item:not(:last-child) {
+    margin-right: 34px;
+}
+
+.nav-list_link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: 'Inter';
+    color: white;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.nav-list_link:hover{
+    color: #AA14F0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header {
     width: 100%;
     padding: 0 15px;
     display: flex;
     justify-content: space-around;
-}
+} */
 
-.left-block {
+/* .left-block {
     width: 100%;
-}
+} */
 
-.logo {
+/* .logo {
 
     font-family: 'IM Fell Great Primer SC', serif;
     color: white;
@@ -43,30 +106,30 @@
     font-size: 23px;
     line-height: 29px;
     text-decoration: none;
-}
+} */
 
-.ellipse1 {
+/* .ellipse1 {
     opacity: 0.8;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)
-}
+} */
 
-.header_menu {
+/* .header_menu {
     height: 70px;
     display: flex;
     align-items: center;
-}
-
+} */
+/* 
 .list {
     display: flex;
     list-style: none;
     font-size: 12px;
-}
+} */
 
-.list_item {
+/* .list_item {
     position: relative;
     text-decoration: none;
     display: flex;
@@ -75,13 +138,13 @@
     color: rgb(252, 250, 250);
     margin: 20px;
     top: 20px;
-}
+} */
 
-.list_item:hover {
+/* .list_item:hover {
     color: #bc3cd8;
-}
+} */
 
-.list_item::before {
+/* .list_item::before {
     content: " ";
     position: absolute;
     width: 10px;
@@ -89,12 +152,12 @@
     background-color: white;
     top: 20px;
     left: 15px;
-}
-
+} */
+/* 
 .list_item::after {
     overflow-x: hidden;
-}
-
+} */
+/* 
 .btn {
     display: flex;
     align-items: center;
@@ -106,9 +169,10 @@
     font-family: "inter";
     font-weight: 700;
 
-}
+} */
 
 .centr {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -212,6 +276,7 @@
 }
 
 .box {
+    width: 100%;
     display: flex;
     margin-bottom: 50px;
     margin-left: 58px;
@@ -284,6 +349,7 @@
 }
 
 .box2 {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-left: 48px;

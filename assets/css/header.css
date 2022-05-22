@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter&display=swap');
+
+.header {
+    background-color: black;
+    max-width: 854px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+
+}
+
+.container {
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-left: 5px;
+
+}
+
+.header-ellipse {
+    position: absolute;
+    left: -30px;
+    width: 100%;
+    max-width: 572px;
+
+}
+
+.header_logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: 'IM FELL Great Primer SC ';
+}
+
+.header_nav {
+    width: 100%;
+    max-width: 372px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.nav-list_item:not(:last-child) {
+    margin-right: 34px;
+}
+
+.nav-list_link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: white;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+
+}
+
+.nav-list_link:hover {
+    font-weight: 500;
+    color: #DF308D;
+}
+
+.nav-list_link:hover::after {
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 10px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+
+
+
+.header {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 854px;
+    margin-right: 72px;
+    background-color: #09010E;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header-logo {
+    font-family: 'IM FELL Great Primer SC';
+    font-style: Regular;
+    font-size: 23px;
+}
+
+.header-menu {
+    display: flex;
+
+
+}
+
+.header-menu-link {
+  
+    text-decoration: none;
+    color: white;
+}
+
+.header-avatar {
+    width: 32px;
+    height: 32px;
+} */
