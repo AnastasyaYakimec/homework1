@@ -2,31 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-
-.container {
-    border: 2px solid black;
-    max-width: 854px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    background-color: black;
-    position: relative;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    padding: 15px 25px;
-    position: relative;
-}
-
 .header {
     background-color: black;
-    display: flex;
-    justify-content: space-around;
-    padding: 25px 0;
-    box-sizing: border-box;
+    max-width: 854px;
     position: relative;
+    margin: 0 auto;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+
+}
+
+.container {
+    max-width: 854pxpx;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-left: 5px;
+
+}
+
+.header-ellipse {
+    position: absolute;
+    left: -30px;
+    width: 100%;
+    max-width: 572px;
+
 }
 
 .header_logo {
@@ -37,18 +41,19 @@
     font-family: 'IM FELL Great Primer SC ';
 }
 
-.ellipse3 {
-    position: absolute;
+.header_nav {
     width: 100%;
-    max-width: 354px;
-    top: 0;
-    left: 30px;
+    max-width: 372px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav-list {
     display: flex;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    z-index: 1;
 }
 
 .nav-list_item:not(:last-child) {
@@ -57,14 +62,14 @@
 
 .nav-list_link {
     text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 12px;
     line-height: 15px;
-    font-family: 'Inter';
     color: white;
     align-items: center;
     display: inline-flex;
     flex-direction: column;
+
 }
 
 .nav-list_link:hover {
@@ -81,12 +86,29 @@
     margin-top: 20px;
 }
 
+.primary-btn {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+    border-radius: 3.3px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 13px 37px;
+}
 
 .main {
+    background-color: black;
     width: 100%;
-    max-width: 738px;
+    max-width: 854px;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     box-sizing: border-box;
+    position: relative;
 }
 
 .main-img {
@@ -94,6 +116,28 @@
     max-width: 740px;
     margin: 0 auto;
     box-sizing: border-box;
+
+}
+
+.ellipse-left {
+    position: absolute;
+    max-width: 350px;
+    left: 0;
+    bottom: 40px;
+}
+
+.ellipse-right {
+    position: absolute;
+    max-width: 350px;
+    right: 0;
+    bottom: 40px;
+
+}
+
+.main-cart {
+    max-width: 738px;
+    margin-left: 58px;
+    margin-bottom: 20px;
 }
 
 .header-title {
@@ -101,16 +145,19 @@
     font-size: 21px;
     color: white;
     margin-top: 20px;
-
+    font-family: 'Orbitron';
+    font-weight: 600;
 }
 
 .header-text {
     font-size: 18px;
     margin: 20px 0;
     color: white;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 
-.btn-header {
+.primary-btn {
     display: flex;
     align-items: center;
     text-align: center;
@@ -121,34 +168,4 @@
     font-family: "inter";
     font-weight: 700;
     color: white;
-}
-
-.btn {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    /* width: 20%; */
-    padding: 13px 37px;
-    border-radius: 3px;
-    border: hidden;
-    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
-    font-family: "inter";
-    font-weight: 700;
-    color: white;
-
-}
-
-.ellipse2 {
-    width: 30%;
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: rotate(180deg);
-}
-
-.ellipse1 {
-    position: absolute;
-    top: 40%;
-    width: 30%;
 }
