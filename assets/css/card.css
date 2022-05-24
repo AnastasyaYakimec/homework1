@@ -40,8 +40,14 @@
     background-color: #09010E;
     color: white;
     padding: 8px 32px;
-  
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: border 0.4s ease-in;
 
+}
+
+.card-name:hover {
+    border: 2px solid #d212a2;
 }
 
 .card-description {
@@ -55,6 +61,12 @@
     color: white;
     padding: 8px 32px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    transition: border 0.4s ease-in;
+}
+
+.card-description:hover {
+    border: 2px solid #d212a2;
 }
 
 .card-image-name {
@@ -68,6 +80,12 @@
     color: white;
     padding: 8px 32px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    transition: border 0.4s ease-in;
+}
+
+.card-image-name:hover {
+    border: 2px solid #d212a2;
 }
 
 .btn {
@@ -86,4 +104,9 @@
     font-weight: 800;
     font-size: 18px;
     margin-bottom: 10px;
+    transition: background-color 0, 5s ease-in;
+}
+
+.btn:hover {
+    background: rgb(95, 6, 103);
 }

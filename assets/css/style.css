@@ -82,25 +82,20 @@
 
 .btn {
     display: flex;
-    align-items: center;
-    padding: 10px 17px;
-    border-radius: 3px;
+    justify-content: space-around;
+    background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+    border-radius: 2px;
+    margin-left: 5px;
+    padding: 3px 15px;
+    color: white;
     border: hidden;
-    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
-    font-family: "inter";
-    font-weight: 700;
     cursor: pointer;
-transition: all;
-
-
-
+    transition: background-color 0, 5s ease-in;
 }
 
-
-
-
-
-
+.btn:hover {
+    background: #F1005B;
+}
 
 .main {
     display: flex;
@@ -114,7 +109,6 @@ transition: all;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-
 }
 
 .left {
@@ -148,6 +142,24 @@ transition: all;
 .text {
     display: flex;
     align-items: center;
+}
+
+.btn-main {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+    border-radius: 2px;
+    margin-left: 5px;
+    padding: 3px 15px;
+    color: white;
+    border: hidden;
+    cursor: pointer;
+    transition: background-color 0, 5s ease-in;
+    z-index: 4;
+}
+
+.btn-main:hover {
+    background: #F1005B;
 }
 
 .link {
@@ -268,8 +280,14 @@ transition: all;
     background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
     font-family: "inter";
     font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0,
+        5s ease-in;
 
+}
 
+.btn-box:hover {
+    background: #F1005B;
 }
 
 .box1 {
@@ -666,6 +684,12 @@ transition: all;
     color: white;
     border: hidden;
     padding: 5px 20px;
+    cursor: pointer;
+    transition: border-radius 0.7s ease-in;
+}
+
+.input:hover {
+    border: 2px solid #d212a2;
 }
 
 .btn-footer {
@@ -677,6 +701,12 @@ transition: all;
     padding: 3px 5px;
     color: white;
     border: hidden;
+    cursor: pointer;
+    transition: background-color 0, 5s ease-in;
+}
+
+.btn-footer:hover {
+    background: #cc86d0;
 }
 
 .btn-footer::after {

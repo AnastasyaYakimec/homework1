@@ -66,6 +66,7 @@
 .password:hover {
     border: 2px solid #d212a2;
 }
+
 .btn {
     width: 100%;
     max-width: 260px;
@@ -73,7 +74,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: #9F62BB;
+    background-color: #9F62BB;
     border-radius: 2px;
     border: hidden;
     color: white;
