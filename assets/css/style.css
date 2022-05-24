@@ -89,7 +89,18 @@
     background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
     font-family: "inter";
     font-weight: 700;
+    cursor: pointer;
+transition: all;
+
+
+
 }
+
+
+
+
+
+
 
 .main {
     display: flex;
