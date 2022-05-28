@@ -15,7 +15,6 @@
     padding: 0 15px;
     max-width: 854px;
     margin: 0 auto;
-    align-self: center;
 }
 
 .headerellipse {
@@ -24,13 +23,14 @@
     max-width: 354px;
     top: 0;
     left: 70px;
+    filter: blur(5px);
 }
 
 .header {
     background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 25px 0;
+    padding: 15px 0;
     box-sizing: border-box;
 }
 
@@ -86,15 +86,15 @@
     background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
     border-radius: 2px;
     margin-left: 5px;
-    padding: 3px 15px;
+    padding: 10px 25px;
     color: white;
     border: hidden;
     cursor: pointer;
-    transition: background-color 0, 5s ease-in;
+    transition: background-color 0.5s ease-in;
 }
 
 .btn:hover {
-    background: #F1005B;
+    background: rgb(237, 195, 236);
 }
 
 .main {
@@ -117,8 +117,9 @@
 }
 
 .title {
-    width: 333px;
-    height: 131px;
+    width: 100%;
+    max-width: 333px;
+    max-height: 130px;
     font-family: 'Orbitron';
     font-style: normal;
     font-weight: 900;
@@ -128,8 +129,7 @@
 }
 
 .subtitle {
-    width: 314px;
-    height: 45px;
+    max-width: 314px;
     left: 58px;
     font-family: 'Inter';
     font-style: normal;
@@ -150,16 +150,16 @@
     background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
     border-radius: 2px;
     margin-left: 5px;
-    padding: 3px 15px;
+    padding: 10px 15px;
     color: white;
     border: hidden;
     cursor: pointer;
-    transition: background-color 0, 5s ease-in;
+    transition: background-color 0.5s ease-in;
     z-index: 4;
 }
 
 .btn-main:hover {
-    background: #F1005B;
+    background: rgb(237, 195, 236);
 }
 
 .link {
@@ -196,10 +196,12 @@
 .ellipse-left {
     position: absolute;
     width: 100%;
+    filter: blur(75px);
     max-width: 354px;
     top: 60px;
     background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)
 }
+
 
 .right {
     margin-right: 50px;
@@ -215,6 +217,7 @@
     position: absolute;
     max-width: 669px;
     right: 0;
+    filter: blur(75px);
     top: 60px;
     background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)
 }
@@ -222,7 +225,7 @@
 
 .box {
     width: 100%;
-    display: flex;
+
     margin-bottom: 50px;
 }
 
@@ -274,20 +277,18 @@
     display: flex;
     align-items: center;
     max-width: 130px;
-    padding: 10px 17px;
+    padding: 8px 17px;
     border-radius: 3px;
     border: hidden;
     background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
     font-family: "inter";
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0,
-        5s ease-in;
-
+    transition: background-color 0.5s ease-in;
 }
 
 .btn-box:hover {
-    background: #F1005B;
+    background: rgb(237, 195, 236);
 }
 
 .box1 {
@@ -336,7 +337,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .border-img {
@@ -442,6 +442,7 @@
     top: 50px;
     width: 367px;
     height: 354px;
+    filter: blur(45px);
     background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)
 }
 
@@ -513,6 +514,7 @@
 .block-company-values {
     display: flex;
     justify-content: space-evenly;
+    margin: 20px 0;
 }
 
 .block-text {
@@ -524,6 +526,7 @@
     max-width: 367px;
     bottom: -70px;
     left: 0;
+    filter: blur(55px);
     background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)
 }
 
@@ -571,6 +574,7 @@
     right: 35px;
     bottom: -65px;
     max-width: 367px;
+    filter: blur(55px);
     background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
 }
 
@@ -684,8 +688,9 @@
     color: white;
     border: hidden;
     padding: 5px 20px;
+    border: transparent;
     cursor: pointer;
-    transition: border-radius 0.7s ease-in;
+    transition: border 0.7s ease-in;
 }
 
 .input:hover {
@@ -694,7 +699,7 @@
 
 .btn-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
     border-radius: 2px;
     margin-left: 5px;
@@ -702,19 +707,212 @@
     color: white;
     border: hidden;
     cursor: pointer;
-    transition: background-color 0, 5s ease-in;
+    transition: background-color 0. 5s ease-in;
+}
+
+.vector {
+    padding: 5px;
+    padding-bottom: 0;
 }
 
 .btn-footer:hover {
     background: #cc86d0;
 }
 
-.btn-footer::after {
-    content: url(../icon/icon/icon6.svg);
-}
-
 .foto-hands {
     opacity: 0.5;
     width: 100%;
     max-width: 334px;
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .centr {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .girl-v-vr {
+        width: 320px;
+        height: 390px;
+        padding-bottom: 10px;
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-subtitle {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        margin-left: 0;
+        font-family: 'Orbitron';
+        font-style: normal;
+        font-size: 24px;
+        line-height: 33px;
+        font-weight: 900;
+        padding-bottom: 15px;
+    }
+
+    .subtitle {
+        width: 100%;
+        max-width: 90%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 12px;
+        line-height: 10px;
+        padding-bottom: 30px;
+    }
+
+    .ellipse-left {
+        filter: blur(20px);
+        position: absolute;
+        left: 0;
+    }
+
+    .elipse-right {
+        filter: blur(20px);
+        position: absolute;
+        right: 0;
+    }
+
+    .inform {
+        display: flex;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
+        width: 100%;
+    }
+
+    .btn-main {
+        width: 40vw;
+        display: flex;
+        text-align: center;
+        padding: 10px 15px;
+        border-radius: 3px;
+        border: 2px solid;
+        margin: 5px;
+        border: hidden;
+        margin-right: 20px;
+    }
+
+    .link {
+        width: 40vw;
+        padding: 10px 15px;
+        display: inline-block;
+        border-radius: 3px;
+        cursor: pointer;
+        border: hidden;
+        color: white;
+        margin: 5px;
+        transition: border 0.2s ease-in, color 0.2s ease-in;
+        z-index: 2;
+    }
+
+    .link:hover {
+        border: 2px solid #AA14F0;
+        color: #B936F5;
+    }
+
+    .people {
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        padding: 10px 5px;
+        margin: 20px 0;
+    }
+
+    .white-dote {
+        margin: 0 20px;
+    }
+
+    .subtitle-online {
+        font-size: 10px;
+    }
+
+    .right {
+        padding: 0;
+        margin: 0;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-girl-VR-mask {
+        margin-right: 18px;
+        width: 100%;
+    }
+
+    .foto-man-VR-mask {
+        align-self: flex-end;
+        width: 100%;
+    }
+
+    .box-text {
+        margin: 0 auto;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-title {
+        height: 25px;
+        width: 70%;
+        margin-top: 20px;
+        margin-bottom: 14px;
+    }
+
+    .box-text-p {
+        width: 80%;
+        padding: 0;
+    }
+
+    .btn-box {
+        max-width: 100%;
+        display: flex;
+        display: flex;
+        text-align: center;
+        padding: 10px 75px;
+        border-radius: 3px;
+        border: 2px solid;
+        border: hidden;
+        margin: 0;
+    }
+
 }

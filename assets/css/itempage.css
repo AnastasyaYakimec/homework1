@@ -13,16 +13,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 60px;
+    padding: 20px 0;
 
 }
 
 .container {
-    max-width: 854pxpx;
+    max-width: 854px;
     margin: 0 auto;
-    padding: 0 15px;
-    padding-left: 5px;
-
+    padding: 0 58px;
 }
 
 .header-ellipse {
@@ -30,6 +28,7 @@
     left: -30px;
     width: 100%;
     max-width: 572px;
+    filter: blur(5px);
 
 }
 
@@ -69,12 +68,17 @@
     align-items: center;
     display: inline-flex;
     flex-direction: column;
-
 }
+
 
 .nav-list_link:hover {
     font-weight: 500;
     color: #DF308D;
+}
+
+.nav-list_btn {
+    text-decoration: none;
+
 }
 
 .nav-list_link:hover::after {
@@ -85,6 +89,8 @@
     position: absolute;
     margin-top: 20px;
 }
+
+
 
 .primary-btn {
     display: flex;
@@ -98,9 +104,8 @@
     text-decoration: none;
     font-weight: 700;
     color: white;
-    transition: background-color 0, 5s ease-in;
+    transition: background-color 0.5s ease-in;
 }
-
 
 .nav-list_link {
     text-decoration: none;
@@ -135,6 +140,7 @@
     max-width: 350px;
     left: 0;
     bottom: 40px;
+    filter: blur(5px);
 }
 
 .ellipse-right {
@@ -142,7 +148,7 @@
     max-width: 350px;
     right: 0;
     bottom: 40px;
-
+    filter: blur(5px);
 }
 
 .main-cart {
