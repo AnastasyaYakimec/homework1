@@ -30,7 +30,7 @@
     background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 15px 15px;
     box-sizing: border-box;
 }
 
@@ -63,7 +63,6 @@
     align-items: center;
     display: inline-flex;
     flex-direction: column;
-
 }
 
 .nav-list_link:hover {
@@ -202,7 +201,6 @@
     background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%)
 }
 
-
 .right {
     margin-right: 50px;
 }
@@ -210,7 +208,6 @@
 .girl-v-vr {
     width: 420px;
     height: 490px;
-
 }
 
 .elipse-right {
@@ -224,8 +221,8 @@
 
 
 .box {
+    display: flex;
     width: 100%;
-
     margin-bottom: 50px;
 }
 
@@ -381,7 +378,6 @@
     background-image: url(../img/foto\ man\ v\ vr.svg);
     background-repeat: no-repeat;
     text-decoration: none;
-    width: 230px;
     margin-left: 40px;
     margin-bottom: 40px;
     width: 230px;
@@ -423,10 +419,10 @@
     color: #EFDEDE
 }
 
-
 .cart-reviews {
     display: flex;
     flex-direction: column;
+    margin-left: 35px;
     text-align: center;
     background-image: url(../img/background.svg);
     background-repeat: no-repeat;
@@ -468,7 +464,6 @@
     font-family: 'Inter';
     font-weight: 400;
     color: rgba(255, 255, 255, 0.85);
-
 }
 
 .list-cart-user {
@@ -477,17 +472,24 @@
     margin-bottom: 20px;
 }
 
-.cart-user {
+.cart-user-1,
+.cart-user-2,
+.cart-user-3 {
     background-image: url(../img/background.svg);
     border-radius: 10px;
     padding: 10px 15px;
     margin: 5px;
     font-size: 5px;
+    line-height: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 30%;
 }
 
 .user-info {
     display: flex;
-
 }
 
 .cart-title {
@@ -496,6 +498,8 @@
 
 .cart-p {
     margin: 15px 0;
+    line-height: 7px;
+    max-width: 90%;
 }
 
 .cart-footer-span {
@@ -566,7 +570,6 @@
     line-height: 15px;
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.85);
-
 }
 
 .ellipse3-1 {
@@ -579,20 +582,19 @@
 }
 
 .block-icon-text {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     max-width: 155px;
-    margin-left: 5px;
-    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
 }
 
 .block-icon {
+    height: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     font-family: 'Inter';
     font-weight: 600;
     font-size: 7px;
@@ -654,7 +656,6 @@
     color: #FFFFFF;
     width: 100%;
     color: rgba(255, 255, 255, 0.85);
-
 }
 
 .title-explore::after {
@@ -732,6 +733,11 @@
         flex-direction: column;
         justify-content: center;
         padding: 0;
+
+    }
+
+    .header {
+        display: flex;
     }
 
     .centr {
@@ -900,7 +906,7 @@
 
     .box-text-p {
         width: 80%;
-       padding: 0; 
+        padding: 0;
     }
 
     .btn-box {
@@ -913,6 +919,190 @@
         border: 2px solid;
         border: hidden;
         margin: 0;
+    }
+
+    .box1 {
+        align-items: center;
+        max-width: 90vw;
+        background-size: 100%;
+        padding: 0 10px;
+        margin: 5px 10px;
+    }
+
+    .box1-subtaitle {
+        font-size: 2vw;
+        width: 100%;
+        line-height: 15px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+
+    .foto-button {
+        width: 30%;
+        border-radius: 6.56072px 19.6822px 6.56072px 6.56072px;
+        margin: 0;
+        padding-bottom: 15px;
+        padding-right: 20px;
+    }
+
+    .box2 {
+        padding: 0 30px;
+        max-width: 100%;
+    }
+
+    .box2-subtaitle {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    .border-vector-text {
+        max-width: 30%;
+    }
+
+    .border-img {
+        max-width: 100%;
+    }
+
+    .border-text {
+        font-size: 14px;
+    }
+
+    .border-vector {
+        padding-right: 20px;
+    }
+
+    .list-variant {
+        padding: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-variant-li {
+        margin: 10px 0;
+        background-size: 100%;
+        width: 100%;
+        height: 60vw;
+    }
+
+    .grey-b {
+        max-width: 30%;
+        height: 20%;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .cart-subtaitle {
+        width: 100%;
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+
+    .cart-tex {
+        font-size: 10px;
+    }
+
+    .cart-reviews {
+        width: 90%;
+        display: flex;
+    }
+
+    .list-cart-user {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .cart-user-1 {
+        max-width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .cart-p {
+        font-size: 5px;
+        width: 40%;
+        text-align: left;
+        padding: 5px;
+    }
+
+    .cart-user-2 {
+        position: absolute;
+        display: none;
+    }
+
+    .cart-user-3 {
+        display: none;
+        position: absolute;
+    }
+
+    .block-company-values {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .company-values {
+        margin: 0;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .title-company-values {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: 'Orbitron';
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .text-company-values {
+        width: 70%;
+    }
+
+    .pink-heart {
+        display: none;
+    }
+
+    .block-icon-text {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 60%;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .icon1,
+    .icon2,
+    .icon3,
+    .icon4 {
+        width: 50%;
+        height: 50%;
+    }
+
+    .block-icon {
+        justify-content: center;
+        width: 25vw;
+        height: 20vw;
+    }
+
+    .block-icon-span {
+        padding-top: 10px;
+    }
+
+    .footer {
+        margin: 0 auto;
+        width: 90%;
     }
 
 }
