@@ -72,3 +72,67 @@
 .btn:hover {
     background: rgb(95, 6, 103);
 }
+
+@media (max-width: 576px) {
+    .adding-cart {
+        background-color: aqua;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+        max-width: 560px;
+    }
+
+    .img-group {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .adding-cart_title {
+        font-size: 20px;
+        font-family: 'Orbitron';
+        padding: 0px;
+    }
+
+    .adding-cart-form {
+        max-width: 100%;
+        width: 90%;
+       margin: 10px;
+    }
+
+    .adding-cart-form_input {
+        /* width: 100%;
+        max-width: 560px; */
+        border: 2px solid #C8D1E5;
+        font-weight: 400;
+        font-size: 12px;
+        background-color: #09010E;
+        color: white;
+        padding: 12px 20px;
+        /* margin: 10px 0px; */
+        /* margin-bottom: 10px; */
+        border-radius: 5px;
+        transition: border 0.4s ease-in;
+
+    }
+.btn {
+    width: 100%;
+    /* max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #9F62BB;
+    border-radius: 2px;
+    border: hidden;
+    color: white;
+    cursor: pointer; */
+    padding: 11px 44px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+    transition: background-color 0.5s ease-in;
+}
+
+
+
+}
