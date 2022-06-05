@@ -86,6 +86,46 @@
     margin-top: 20px;
 }
 
+@media (max-width: 576px) {
+    .header {
+        width: 100%;
+
+    }
+
+
+.header_nav{
+border: 1px solid green;
+display: flex;
+}
+ .nav-list{
+     display: flex;
+        flex-direction: column;
+ align-items: flex-end; 
+border: 2px solid red;
+
+} 
+
+
+    .header_logo {
+        display: none;
+    }
+
+    .header-ellipse {
+        display: none;
+    }
+
+.nav-list_link{
+font-size: 12px;
+
+
+
+border: 1px solid white;
+}
+
+/* .smallavatar{
+position: absolute;
+border: 1px solid yellow;
+} */
 
 
 
@@ -93,13 +133,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+}
