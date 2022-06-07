@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <link rel="stylesheet" href="./assets/css/dialog.css">
+</head>
+
+<body>
+    <button id="open-dialog">Open Dialog</button>
+
+    <div id="dialog" class="dialog">
+        <div class="dialog-content">
+            <span id="close-dialog" class="dialog-close">&times;</span>
+            <span>Some content text 0</span>
+            <span>Some content text 1</span>
+            <span>Some content text 2</span>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let dialog = document.getElementById('dialog');
+    let dialogOpenButton = document.getElementById('open-dialog');
+    let dialogCloseButton = document.getElementById('close-dialog');
+
+    dialogOpenButton.onclick = () =>{
+        dialog.style.display = 'block';
+    }
+
+    dialogCloseButton.onclick = () => {
+        dialog.style.display = 'none';
+    }
+
+
+
+</script>

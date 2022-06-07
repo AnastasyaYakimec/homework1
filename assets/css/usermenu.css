@@ -29,7 +29,6 @@
 .user-menu-vector {
    width: 12px;
    height: 7px;
-
 }
 
 .menu {
@@ -37,10 +36,8 @@
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-
 }
 
 .menu-item {
    padding-bottom: 15px;
-
 }

@@ -62,7 +62,6 @@
     border: 2px solid #d212a2;
 }
 
-
 .btn {
     width: 100%;
     max-width: 260px;
@@ -89,10 +88,7 @@
     display: none;
 }
 
-
-
 @media (max-width: 576px) {
-
 
     body {
         background-color: #09010E;

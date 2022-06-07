@@ -4,17 +4,10 @@
 .header {
     background-color: black;
     max-width: 854px;
+    width: 100%;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-}
-
-.header-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-
 }
 
 .container {
@@ -22,7 +15,6 @@
     margin: 0 auto;
     padding: 0 15px;
     padding-left: 5px;
-
 }
 
 .header-ellipse {
@@ -30,7 +22,13 @@
     left: -30px;
     width: 100%;
     max-width: 572px;
+}
 
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
 }
 
 .header_logo {
@@ -53,7 +51,6 @@
     display: flex;
     align-items: center;
     z-index: 1;
-
 }
 
 .nav-list_item:not(:last-child) {
@@ -69,7 +66,6 @@
     align-items: center;
     display: inline-flex;
     flex-direction: column;
-
 }
 
 .nav-list_link:hover {
@@ -87,24 +83,34 @@
 }
 
 @media (max-width: 576px) {
-    .header {
-        width: 100%;
-
+    .container {
+        display: flex;
+        justify-content: flex-end;
     }
 
+    .header {
+        max-height: 130px;
+        max-width: 120px;
+        width: 100%;
+        border-radius: 6px;
+    }
 
-.header_nav{
-border: 1px solid green;
-display: flex;
-}
- .nav-list{
-     display: flex;
+    .nav-list::before {
+        content: " ";
+        height: 32px;
+        width: 32px;
+        background-image: url(../img/smallavatar.svg);
+    }
+
+    .nav-list_item:not(:last-child) {
+        margin: 0;
+    }
+
+    .nav-list {
+        display: flex;
         flex-direction: column;
- align-items: flex-end; 
-border: 2px solid red;
-
-} 
-
+        align-items: flex-end;
+    }
 
     .header_logo {
         display: none;
@@ -114,23 +120,11 @@ border: 2px solid red;
         display: none;
     }
 
-.nav-list_link{
-font-size: 12px;
+    .smallavatar {
+        display: none;
+    }
 
-
-
-border: 1px solid white;
-}
-
-/* .smallavatar{
-position: absolute;
-border: 1px solid yellow;
-} */
-
-
-
-
-
-
-
+    .nav-list_link {
+        font-size: 12px;
+    }
 }

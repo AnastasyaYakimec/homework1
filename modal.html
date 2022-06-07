@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="qwerty" class="box">
+    </div>
+    <button id="openButton" class="btn">Open</button>
+    <button id="closeButton" class="btn">Close</button>
+</body>
+
+</html>
+<script>
+    let box = document.getElementById('qwerty')
+    let openButton = document.getElementById('openButton');
+    openButton.onclick = () => {
+        box.style.display = 'block';
+    }
+    closeButton.onclick = () => {
+        box.style.display = 'none';
+    }
+</script>
