@@ -7,19 +7,14 @@
 // let cartUser = null;
 
 let modalSignIn = document.getElementById("modalSignIn");
-let close = document.getElementById("close");
+let closeSignIn = document.getElementById("closeSignIn");
 let openSignIn = document.getElementById("openSignIn");
 
-close.onclick = () => {
+closeSignIn.onclick = () => {
+  console.log("iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii");
   modalSignIn.style.display = "none";
 };
 openSignIn.onclick = () => {
+  console.log("ssssssssssssssssssssssssssssssssssssssssss");
   modalSignIn.style.display = "block";
-};
-
-let userMenu = document.getElementById("userMenu");
-let avatar = document.getElementById("avatar");
-avatar.onclick = () => {
-  // userMenu.style.display = "block";
-    
 };
