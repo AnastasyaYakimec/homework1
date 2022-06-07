@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/burger-menu.css">
   <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/signin.css">
   <title>Virtual</title>
 </head>
 
@@ -33,7 +34,7 @@
                 <a href="" class="nav-list_link">Features</a>
               </li>
               <li class="nav-list_item">
-                <button class="btn">Sign in</button>
+                <button id="openSignIn" class="btn">Sign in</button>
               </li>
             </ul>
           </nav>
@@ -246,8 +247,47 @@
       </div>
     </div>
   </div>
-  <script src="./scripts/index.js">
 
+
+
+
+  <div class="wrap">
+    <div class="container">
+      <div class="header-wraps">
+        <img class="header-ellipse" src="./assets/icon/headerellipse.svg" alt="">
+        <a class="header_logo" href="index.html">
+          Light
+        </a>
+        <div class="burger-menu">
+          <input id="menu__toggle" type="checkbox" class="menu__toggle">
+          <label for="menu__toggle" class="menu__btn">
+            <span class="line"></span>
+          </label>
+          <ul class="menu__box">
+            <li><a href="#" class="menu__item">Home</a></li>
+            <li><a href="#" class="menu__item">Company</a></li>
+            <li><a href="#" class="menu__item">Features</a></li>
+            <li class="nav-list_item">
+              <button class="btn">Sign in</button> ><a href="#" class="menu__item"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <main id="modalSignIn" class="sign-in">
+        <h1 class="sign-in_title">Sign in</h1>
+        <form class="sign-in_form" action="#">
+          <input class="email input" type="email" name="email" placeholder="Email or username">
+          <input class="password input" type="password" name="password" placeholder="Password">
+          <button class="btn">Sign in</button>
+        </form>
+        <span id="close" class="close">&times;</span>
+        <div class="img"> <img class="ellipse-right" src="./assets/icon/ellipse2.svg" alt=""></div>
+      </main>
+    </div>
+  </div>
+
+
+  <script src="./scripts/index.js">
 
   </script>
 

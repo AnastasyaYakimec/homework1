@@ -15,10 +15,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* display: none;
+    display: flex; */
+    position: fixed;
+
 }
-.header-wrap {
-    display: none;
+  .header-wraps {
+        display: none;
+    } 
+
+.close {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
 }
+
+
 
 .sign-in_title {
     text-align: center;
@@ -94,9 +109,12 @@
         background-color: #09010E;
     }
 
+   
+
     .header-wrap {
         display: contents;
     }
+
     .header_logo {
         position: absolute;
         color: white;
