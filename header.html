@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/usermenu.css">
     <title>Header</title>
 </head>
 
@@ -29,13 +30,45 @@
                         <li class="nav-list_item">
                             <a href="/features" class="nav-list_link">Features</a>
                         </li>
-                        <img class="smallavatar" src="./assets/img/smallavatar.svg" alt="">
+                        <img id="avatar" class="smallavatar" src="./assets/img/smallavatar.svg" alt="">
                     </ul>
+
                 </nav>
             </div>
         </div>
 
     </header>
+    <div id="userMenu" class="user-menu">
+        <div class="header">
+            <h4 class="user-menu-title">User menu</h4>
+            <link rel="stylesheet" href="./assets/css/reset.css">
+            <img class="user-menu-vector" src="./assets/img/Vector(14).svg" alt="">
+        </div>
+        <ul class="menu">
+            <li class="menu-item">Recently Added</li>
+            <li class="menu-item">Dashboard management</li>
+            <li class="menu-item">Log out</li>
+        </ul>
+    </div>
+
+    <script>
+        let userMenu = document.getElementById("userMenu");
+        let avatar = document.getElementById("avatar");
+        let closeUserMenu = document.getElementById("closeUserMenu")
+
+
+        avatar.onclick = () => {
+            userMenu.style.display = "block";
+        };
+
+        userMenu.onclick = () => {
+            userMenu.style.display = "none";
+        };
+
+
+    </script>
 </body>
+
+
 
 </html>
