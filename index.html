@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/burger-menu.css">
   <link rel="stylesheet" href="./assets/css/signin.css">
+  <link rel="stylesheet" href="./assets/css/itempage.css">
   <title>Virtual</title>
 </head>
 
@@ -34,7 +35,7 @@
                 <a href="" class="nav-list_link">Features</a>
               </li>
               <li class="nav-list_item">
-                <button id="openSignIn" class="btn">Sign in</button>
+                <button id="openSignIn" class="btn-box">Sign in</button>
               </li>
             </ul>
           </nav>
@@ -48,7 +49,7 @@
               <li><a href="#" class="menu__item">Company</a></li>
               <li><a href="#" class="menu__item">Features</a></li>
               <liclass="nav-list_item">
-                <button class="btn">Sign in</button> ><a href="#" class="menu__item"></a></liclass=>
+                <button class="btn-box">Sign in</button> ><a href="#" class="menu__item"></a></liclass=>
             </ul>
           </div>
         </div>
@@ -94,7 +95,7 @@
               real feel, like you are the main character in your game and
               adventure in this new digital world.
             </p>
-            <button class="btn-box">Get it Now</button>
+            <button class="btn">Get it Now</button>
           </div>
         </div>
         <div class="box1">
@@ -237,7 +238,7 @@
               </p>
             </div>
             <div class="input-btn">
-              <input class="input" type="email" name="Youremail" placeholder="Your Email">
+              <input class="input-footer" type="email" name="Youremail" placeholder="Your Email">
               <button class="btn-footer">Start <img class="vector" src="./assets/icon/arrow.svg" alt=""></button>
             </div>
           </div>
@@ -276,12 +277,71 @@
           <button class="btn">Sign in</button>
         </form>
         <span id="closeSignIn" class="close">&times;</span>
-        <div class="img"> <img class="ellipse-right" src="./assets/icon/ellipse2.svg" alt=""></div>
+        <div class="img"><img class="ellipse-right" src="./assets/icon/ellipse2.svg" alt=""></div>
       </main>
     </div>
   </div>
+  <div id="item-page" class="wrap-item">
+    <header class="header-item">
+      <div class="container">
+        <img class="header-ellipse" src="./assets/icon/headerellipse.svg" alt="">
+        <div class="header-wrap">
+          <a class="header_logo" href="index.html">
+            Light
+          </a>
+          <nav class="header_nav">
+            <ul class="nav-list">
+              <li class="nav-list_item">
+                <a href="/home" class="nav-list_link">Home</a>
+              </li>
+              <li class="nav-list_item">
+                <a href="/company" class="nav-list_link">Company</a>
+              </li>
+              <li class="nav-list_item">
+                <a href="/features" class="nav-list_link">Features</a>
+              </li>
+              <li class="nav-list_btn">
+                <a href="signin.html" class=" primary-btn">Sign in</a>
+              </li>
+            </ul>
 
+          </nav>
 
+          <div class="burger-menu">
+            <input id="menu__toggle" type="checkbox" class="menu__toggle">
+            <label for="menu__toggle" class="menu__btn">
+              <span class="line"></span>
+            </label>
+            <ul class="menu__box">
+              <li><a href="#" class="menu__item">Home</a></li>
+              <li><a href="#" class="menu__item">Company</a></li>
+              <li><a href="#" class="menu__item">Features</a></li>
+              <li class="nav-list_item">
+                <button class="btn">Sign in</button> ><a href="#" class="menu__item"></a>
+              </li>
+            </ul>
+          </div>
+    </header>
+    <main class="main">
+      <span id="closeItemPage" class="close">&times;</span>
+      <img class="main-img" src="./assets/img/foto man v vr.svg" alt="">
+      <img class="ellipse-left" src="./assets/img/ellipse2.svg" alt="">
+      <img class="ellipse-right" src="./assets/icon/ellipse2.svg" alt="">
+      <div class="main-cart">
+        <h4 class="header-title">Metaverse</h4>
+        <p class="header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo earum qui
+          omnis
+          dolorum vitae facilis nisi
+          quibusdam
+          voluptate optio iusto dolorem, reprehenderit id, quisquam eveniet suscipit exercitationem. Pariatur,
+          sunt
+          quos?</p>
+        <button class="primary-btn">Get it Now</button>
+      </div>
+    </main>
+  </div>
+  </div>
+  </div>
   <script src="./scripts/index.js">
 
   </script>
