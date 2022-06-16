@@ -37,8 +37,6 @@ user.name = "Jerry";
 delete user.name;
 console.log(user);
 
-
-
 const salaries = {
   Vlad: 100,
   Alina: 130,
@@ -56,7 +54,6 @@ function sumSalary(salaries) {
   return sum;
 }
 
-
 let calculator = {
   read() {
     a = +prompt("введите первое число", 0);
@@ -69,7 +66,7 @@ let calculator = {
 
   mul() {
     return a * b;
-  },
+  }, 
 
   div() {
     return a / b;
