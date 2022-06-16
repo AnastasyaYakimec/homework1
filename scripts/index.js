@@ -53,23 +53,41 @@ function sumSalary(salaries) {
   }
   return sum;
 }
+<<<<<<< HEAD
 let calculator = {
   read() {
     a = +prompt("Введите первое число", 0);
     b = +promt("Введите второе число ", 0);
   },
+=======
+
+let calculator = {
+  read() {
+    a = +prompt("введите первое число", 0);
+    b = +prompt("введите second число", 0);
+  },
+
+>>>>>>> 570e30ad13b65311bacd28ab10498735b3255696
   sum() {
     return a + b;
   },
 
   mul() {
     return a * b;
+<<<<<<< HEAD
   },
+=======
+  }, 
+>>>>>>> 570e30ad13b65311bacd28ab10498735b3255696
 
   div() {
     return a / b;
   },
 };
+<<<<<<< HEAD
+=======
+
+>>>>>>> 570e30ad13b65311bacd28ab10498735b3255696
 calculator.read();
 alert(calculator.sum());
 alert(calculator.mul());
