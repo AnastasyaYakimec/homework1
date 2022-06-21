@@ -1,256 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 #item-page {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    margin: 0 auto;
-    width: 100%;
-    background-color: #09010E;
-    border-radius: 15px;
-    box-sizing: border-box;
-    padding: 15px;
-    bottom: 0;
-    right: 0;
-    top: 0;
-
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #09010e;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  bottom: 0;
+  right: 0;
+  top: 0;
 }
-
 .header-item {
-    background-color: black;
-    max-width: 854px;
-    position: relative;
-    margin: 0 auto;
-    display: none;
-
+  background-color: black;
+  max-width: 854px;
+  position: relative;
+  margin: 0 auto;
+  display: none;
 }
 
 .container {
-    max-width: 854px;
-    margin: 0 auto;
-    padding: 0 58px;
-
+  max-width: 734px;
+  margin: 0 auto;
+  padding: 0 60px;
+  background-color: black;
+  position: relative;
 }
 
 .header-ellipse {
-    position: absolute;
-    left: -30px;
-    width: 100%;
-    max-width: 572px;
-    filter: blur(5px);
-
+  position: absolute;
+  left: 0;
+  width: 100%;
+  max-width: 572px;
+  filter: blur(5px);
 }
 
 .header-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
 }
-
+/* 
 .header_logo {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 32px;
-    font-family: 'IM FELL Great Primer SC ';
-    padding-right: 80px;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 32px;
+  font-family: "IM FELL Great Primer SC ";
+  padding-right: 80px;
 }
 
 .header_nav {
-    width: 100%;
-    max-width: 372px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  max-width: 372px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav-list {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
 }
 
 .nav-list_item:not(:last-child) {
-    margin-right: 34px;
+  margin-right: 34px;
 }
 
 .nav-list_link {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    color: white;
-    align-items: center;
-    display: inline-flex;
-    flex-direction: column;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .nav-list_link:hover {
-    font-weight: 500;
-    color: #DF308D;
+  font-weight: 500;
+  color: #df308d;
 }
 
 .nav-list_btn {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav-list_link:hover::after {
-    content: "";
-    background-color: white;
-    height: 3px;
-    width: 10px;
-    position: absolute;
-    margin-top: 20px;
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 10px;
+  position: absolute;
+  margin-top: 20px;
 }
 
 .primary-btn {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 10px 17px;
-    border-radius: 3px;
-    border: hidden;
-    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
-    font-family: "inter";
-    text-decoration: none;
-    font-weight: 700;
-    color: white;
-    transition: background-color 0.5s ease-in;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 17px;
+  border-radius: 3px;
+  border: hidden;
+  background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
+  font-family: "inter";
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  transition: background-color 0.5s ease-in;
 }
 
 .nav-list_link {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 
 .primary-btn:hover {
-    background: rgb(95, 6, 103);
-}
+  background: rgb(95, 6, 103);
+} */
 
 .main {
-    background-color: black;
-    width: 100%;
-    max-width: 854px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    box-sizing: border-box;
-    position: relative;
-
+  background-color: black;
+  width: 100%;
+  max-width: 854px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.close {
-    color: white;
-    font-size: 50px;
-    position: absolute;
-    top: 0;
-    right: 30px;
-    cursor: pointer;
+.close-item-page {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  cursor: pointer;
 }
 
 .main-img {
-    width: 100%;
-    max-width: 740px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0 15px;
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 .ellipse-left {
-    position: absolute;
-    max-width: 350px;
-    left: 0;
-    bottom: 40px;
-    filter: blur(5px);
+  position: absolute;
+  max-width: 350px;
+  left: 0;
+  bottom: 40px;
+  filter: blur(5px);
 }
 
 .ellipse-right {
-    position: absolute;
-    max-width: 350px;
-    right: 0;
-    bottom: 40px;
-    filter: blur(5px);
+  position: absolute;
+  max-width: 350px;
+  right: 0;
+  bottom: 40px;
+  filter: blur(5px);
 }
 
 .main-cart {
-    max-width: 738px;
-    margin-left: 58px;
-    margin-bottom: 20px;
+  max-width: 738px;
+  margin-left: 78px;
+  margin-bottom: 20px;
 }
 
 .header-title {
-    text-decoration: underline;
-    font-size: 21px;
-    color: white;
-    margin-top: 20px;
-    font-family: 'Orbitron';
-    font-weight: 600;
+  text-decoration: underline;
+  font-size: 21px;
+  color: white;
+  margin-top: 20px;
+  font-family: "Orbitron";
+  font-weight: 600;
 }
 
 .header-text {
-    font-size: 18px;
-    margin: 20px 0;
-    color: white;
-    font-family: 'Inter';
-    font-weight: 400;
+  font-size: 18px;
+  margin: 20px 0;
+  color: white;
+  font-family: "Inter";
+  font-weight: 400;
 }
 
+.primary-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 17px;
+  border-radius: 3px;
+  border: hidden;
+  background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
+  font-family: "inter";
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  transition: background-color 0.5s ease-in;
+}
 @media (max-width: 576px) {
-    .container {
-        max-width: 854px;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
+  .container {
+    max-width: 854px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 
-    .header_nav {
-        display: none;
-    }
+  .header_nav {
+    display: none;
+  }
 
-    .header {
-        background-color: black;
-        max-width: 854px;
-        position: relative;
-        margin: 0 auto;
-    }
+  .header {
+    background-color: black;
+    max-width: 854px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .header-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  .header_logo {
+    font-size: 23px;
+  }
 
-    .header_logo {
-        font-size: 23px;
-    }
+  .main-cart {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 20px;
+  }
 
-    .main-cart {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: 15px 20px;
-    }
+  .header-text {
+    font-size: 14px;
+    align-items: center;
+    display: block;
+    margin: 20px 5px;
+  }
 
-    .header-text {
-        font-size: 14px;
-        align-items: center;
-        display: block;
-        margin: 20px 5px;
-    }
-
-    .primary-btn {
-        display: block;
-        padding: 10px 10px;
-        max-width: 200px;
-        margin: 0 70px 20px;
-    }
-
-
-
+  .primary-btn {
+    display: block;
+    padding: 10px 10px;
+    max-width: 200px;
+    margin: 0 70px 20px;
+  }
 }
