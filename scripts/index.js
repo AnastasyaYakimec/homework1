@@ -4,46 +4,104 @@ let sort = "New First";
 const cards = [
   {
     id: "0",
-    cardImg: "img/foto man v vr.svg",
+    cardImg:
+      "../assets/database/man-with-copy-space-and-futuristic-device_23-2148864987.webp",
     cardName: "Metaverse",
-    cardText: "A Network of 3D virtual worlds focused on social connection.",
+    cardText: "Man with copy space and futuristic device vrglasses.",
     cardDataTime: "null",
   },
   {
     id: "1",
-    cardImg: "img/foto man v vr.svg",
-    cardName: "ygfgruhrguiui",
-    cardText: "A Network of 3D virtual worlds focused on social connection.",
+    cardImg:
+      "../assets/database/close-up-man-wearing-vr-glasses_23-2148864995.webp",
+    cardName: "Metaverse",
+    cardText: "Close up man wearing vr glasses.",
     cardDataTime: "null",
   },
+
   {
     id: "2",
-    cardImg: "img/foto man v vr.svg",
-    cardName: "gggggggggg",
-    cardText: "A Network of 3D virtual worlds focused on social connection.",
+    cardImg:
+      "../assets/database/teenage-girl-with-virtual-reality-headset_231208-5336.webp",
+    cardName: "Metaverse",
+    cardText: "Teenage girl with virtual reality headset.",
     cardDataTime: "null",
   },
 
   {
     id: "3",
-    cardImg: "img/foto man v vr.svg",
-    cardName: "hhhhhhhhhhhh",
-    cardText: "A Network of 3D virtual worlds focused on social connection.",
+    cardImg:
+      "../assets/database/woman-in-glasses-augmented-reality-blue-social-media-cover_53876-97072.webp",
+    cardName: "Metaverse",
+    cardText: "Woman in vr  glasses augmented reality.",
+    cardDataTime: "null",
+  },
+  {
+    id: "4",
+    cardImg:
+      "../assets/database/young-woman-using-vr-glasses_23-2149437736.webp",
+    cardName: "Metaverse",
+    cardText: "Young woman using vr glasses.",
     cardDataTime: "null",
   },
 
   {
-    id: "4",
-    cardImg: "img/foto man v vr.svg",
-    cardName: "Mlllllllll",
+    id: "5",
+    cardImg:
+      "../assets/database/smart-attractive-asian-female-business-owner-weared-virtual-reality-glasses-enjoys-casual-metaverse-meeting-with-concentrate-at-cafe-restaurantasian-female-using-oculus-rift-headset-in-cafe_609648-2189.webp",
+    cardName: "Metaverse",
+    cardText: "Young asian female business woman using vr glasses.",
+    cardDataTime: "null",
+  },
+  {
+    id: "6",
+    cardImg:
+      "../assets/database/portrait-of-a-man-with-glasses-of-virtual-reality-vr-interacts-with-a-virtual-screen_99433-259.webp",
+    cardName: "Metaverse",
+    cardText:
+      "Man with glasses of virtual reality vr interacts with a virtual screen.",
+    cardDataTime: "null",
+  },
+  {
+    id: "7",
+    cardImg:
+      "../assets/database/portrait-of-a-man-with-glasses-of-virtual-reality-vr-interacts-with-a-virtual-screen_99433-249.webp",
+    cardName: "Metaverse",
     cardText: "A Network of 3D virtual worlds focused on social connection.",
     cardDataTime: "null",
   },
   {
-    id: "5",
-    cardImg: "img/foto man v vr.svg",
-    cardName: "ugugrtgthjg",
-    cardText: "A Network of 3D virtual worlds focused on social connection.",
+    id: "8",
+    cardImg:
+      "../assets/database/medium-shot-woman-wearing-vr-glasses_23-2148864930.webp",
+    cardName: "Metaverse",
+    cardText: " Woman wearing vr glasses_.",
+    cardDataTime: "null",
+  },
+
+  {
+    id: "9",
+    cardImg:
+      "../assets/database/man-experiencing-vr-simulation-entertainment-technology_53876-102991.webp",
+    cardName: "Metaverse",
+    cardText: "Man experiencing vr simulation entertainment technology.",
+    cardDataTime: "null",
+  },
+  {
+    id: "10",
+    cardImg:
+      "../assets/database/wondering-of-feelings-little-girl-or-child-in-jeans-and-shirt-with-virtual-reality-headset-glasses-isolated-on-blue-studio-background-concept-of-cutting-edge-technology-video-games-innovation_155003-36852.webp",
+    cardName: "Metaverse",
+    cardText: "Child with virtual reality technology video games innovation.",
+    cardDataTime: "null",
+  },
+  {
+    id: "11",
+    cardImg:
+      "../assets/database/a-man-with-glasses-on-the-background-of-virtual-reality-the-metaverse-future-metaphor-metaverse-technology-concept-cyberuniverse-communication-blockchain-futuristic-network-mixed-media_99433-8199.webp",
+    cardName: "Metaverse",
+    cardText:
+      "A man with glasses on the background of virtual reality the metaverse future.",
     cardDataTime: "null",
   },
 ];
@@ -93,7 +151,10 @@ openSignIn.onclick = () => {
 const generateDynamicCards = () => {
   const listShopVariant = document.getElementById("list-shop-variant");
   cards.forEach((article) => {
-    const articleHtml = ` <li class="list-variant-li" id="${article.id}">
+    const articleHtml = ` 
+    <li class="list-variant-li"
+  style="background-image: url(${article.cardImg});"
+  id="${article.id}">
               <div class="grey-b">
                 <h4 class="card-subtaitle">${article.cardName}</h4>
                 <p class="card-text">${article.cardText} </p>
@@ -103,12 +164,14 @@ const generateDynamicCards = () => {
 
     const articleDiv = document.createElement("div");
     articleDiv.style.display = "flex";
+
     articleDiv.innerHTML = articleHtml;
     listShopVariant.appendChild(articleDiv);
   });
 };
 
 generateDynamicCards();
+
 const mainItemPage = document.getElementById("main-item-page");
 const generateItemPage = (id) => {
   const article = cards.find((item) => item.id == id);
@@ -116,7 +179,7 @@ const generateItemPage = (id) => {
   <button id="closeItemPage"  class="mainBtn" onclick="closeDialog()">
   <span class="close-item-page">&times;</span>
   </button>
-      <img class="main-img" src="./assets/img/foto man v vr.svg" alt="">
+      <img class="main-img" src="${article.cardImg}" alt="">
       <div class="main-cart">
         <h4 class="header-title">${article.cardName}</h4>
         <p class="header-text">${article.cardText}</p>
