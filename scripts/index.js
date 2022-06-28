@@ -1,6 +1,12 @@
-let user = null;
+const user = {
+  name: "petro",
+  surname: "step",
+  age: 21,
+  email: "test@test.com",
+  password: "test@test.com",
+};
 let userSignIn = false;
-let sort = "New First";
+const sort = "New First";
 const cards = [
   {
     id: "0",
@@ -148,29 +154,83 @@ openSignIn.onclick = () => {
   modalSignIn.style.display = "block";
 };
 
-const generateDynamicCards = () => {
-  const listShopVariant = document.getElementById("list-shop-variant");
-  cards.forEach((article) => {
-    const articleHtml = ` 
-    <li class="list-variant-li"
-  style="background-image: url(${article.cardImg});"
-  id="${article.id}">
-              <div class="grey-b">
-                <h4 class="card-subtaitle">${article.cardName}</h4>
-                <p class="card-text">${article.cardText} </p>
-              </div>
-            </li>
-             `;
+// const generateDynamicCards = () => {
+//   const listShopVariant = document.getElementById("list-shop-variant");
+//   cards.forEach((article) => {
+//     const articleHtml = `
+//     <li class="list-variant-li"
+//   style="background-image: url(${article.cardImg});"
+//   id="${article.id}">
+//               <div class="grey-b">
+//                 <h4 class="card-subtaitle">${article.cardName}</h4>
+//                 <p class="card-text">${article.cardText} </p>
+//               </div>
+//             </li>
+//              `;
 
-    const articleDiv = document.createElement("div");
-    articleDiv.style.display = "flex";
+//     const articleDiv = document.createElement("div");
+//     articleDiv.style.display = "flex";
+//     articleDiv.innerHTML = articleHtml;
+//     listShopVariant.appendChild(articleDiv);
+//   });
+// };
 
-    articleDiv.innerHTML = articleHtml;
-    listShopVariant.appendChild(articleDiv);
-  });
+// generateDynamicCards();
+
+const itemsPerPage = 6;
+let currentPage = 1;
+const pages = numPages(cards);
+
+function numPages(cardsArray) {
+  return Math.ceil(cardsArray.length / itemsPerPage);
+}
+
+function changePage(page) {
+  const output = document.getElementById("list-shop-variant");
+  if (page < 1) page = 1;
+  if (page > pages) page = pages;
+  output.innerHTML = "";
+
+  for (
+    let i = (page - 1) * itemsPerPage;
+    i < page * itemsPerPage && i < cards.length;
+    i++
+  ) {
+    output.innerHTML += `
+      <li class="list-variant-li"
+   style="background-image: url(${cards[i].cardImg});"
+   id="${cards[i].id}">
+               <div class="grey-b">
+                 <h4 class="card-subtaitle">${cards[i].cardName}</h4>
+                 <p class="card-text">${cards[i].cardText} </p>
+               </div>
+            </li>`;
+  }
+}
+
+function nextPage() {
+  if (currentPage < pages) changePage(++currentPage);
+}
+
+function prevPage() {
+  if (currentPage > 1) changePage(--currentPage);
+}
+
+function gotoPage(page) {
+  currentPage = page;
+  changePage(page);
+}
+
+function addPages() {
+  const el = document.getElementById("pages");
+  for (let i = 1; i < pages + 1; i++) {
+    el.innerHTML += `<li ><a class="pagination_number_li" href="javascript:gotoPage(${i})">${i}</a></li>`;
+  }
+}
+window.onload = function () {
+  changePage(1);
+  addPages();
 };
-
-generateDynamicCards();
 
 const mainItemPage = document.getElementById("main-item-page");
 const generateItemPage = (id) => {

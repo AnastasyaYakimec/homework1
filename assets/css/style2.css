@@ -4,7 +4,7 @@
 }
 
 .fCard {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 0 25px;
   text-align: center;
   box-sizing: border-box;
@@ -21,4 +21,18 @@
 .qwerty {
   display: flex;
   flex-wrap: wrap;
+}
+
+body {
+  margin: 25px;
+  /* border: 3px solid red; */
+}
+
+ul#pages,
+ul#pages li {
+  display: inline-block;
+  padding: 0;
+}
+ul#pages > li {
+  margin: 0px 3px;
 }
