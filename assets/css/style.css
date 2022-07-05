@@ -40,6 +40,7 @@
   font-weight: 400;
   font-size: 32px;
   font-family: "IM FELL Great Primer SC ";
+  margin-top: 20px;
 }
 
 .nav-list {
@@ -392,6 +393,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  /* display: none; */
 }
 
 .list-variant-li {
@@ -402,11 +404,17 @@
   text-decoration: none;
   margin-left: 10px;
   margin-bottom: 10px;
-  width: 230px;
-  height: 180px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: flex-end;
   z-index: 5;
+}
+.modalMainBtn {
+  background: inherit;
+  width: 240px;
+  height: 180px;
+  border: none;
 }
 
 .grey-b {
@@ -456,6 +464,7 @@
 }
 
 .ellipse2-1 {
+  z-index: -1;
   position: absolute;
   left: 0;
   top: 50px;
@@ -512,7 +521,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .user-info {
@@ -791,7 +800,7 @@
   }
 
   .header {
-    display: flex;
+    display: none;
   }
 
   .centr {
@@ -1062,6 +1071,12 @@
     display: flex;
   }
 
+  /* .list-cart-user {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 300px;
+    overflow-x: auto;
+  } */
   .list-cart-user {
     width: 90%;
     padding: 0 20px;

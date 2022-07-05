@@ -1,48 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
 
-
-.user-menu {
-   box-sizing: border-box;
-   margin: 0 auto;
-   padding: 0 15px;
-   border-radius: 5px;
-   width: 100%;
-   max-width: 304px;
-   background-color: #09010E;
-   color: white;
-   font-family: 'inter';
-   font-size: 16px;
-   font-style: regular;
-   margin-top: 20px;
-   display: none;
+.user-menu-registered {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 15px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 304px;
+  background-color: #09010e;
+  color: white;
+  font-family: "inter";
+  font-size: 16px;
+  font-style: regular;
+  margin-top: 20px;
+  position: absolute;
+  top: 30px;
+  left: 800px;
+  cursor: pointer;
+  display: none;
 }
 
-.header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 15px 0;
+.header-registered {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
 }
 
-.user-menu-title {
-   color: white;
+.user-menu-title-registered {
+  color: white;
 }
 
-.user-menu-vector {
-   width: 12px;
-   height: 7px;
-
+.user-menu-vector-registered {
+  width: 12px;
+  height: 7px;
 }
 
-.menu {
-   list-style-type: none;
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-
+.menu-registered {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.menu-item {
-   padding-bottom: 15px;
-
+.menu-item-registered {
+  padding-bottom: 15px;
+  cursor: pointer;
 }

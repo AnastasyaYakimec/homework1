@@ -1,118 +1,3 @@
-const user = {
-  name: "petro",
-  surname: "step",
-  age: 21,
-  email: "test@test.com",
-  password: "test@test.com",
-};
-let userSignIn = false;
-const sort = "New First";
-const cards = [
-  {
-    id: "0",
-    cardImg:
-      "../assets/database/man-with-copy-space-and-futuristic-device_23-2148864987.webp",
-    cardName: "Metaverse",
-    cardText: "Man with copy space and futuristic device vrglasses.",
-    cardDataTime: "null",
-  },
-  {
-    id: "1",
-    cardImg:
-      "../assets/database/close-up-man-wearing-vr-glasses_23-2148864995.webp",
-    cardName: "Metaverse",
-    cardText: "Close up man wearing vr glasses.",
-    cardDataTime: "null",
-  },
-
-  {
-    id: "2",
-    cardImg:
-      "../assets/database/teenage-girl-with-virtual-reality-headset_231208-5336.webp",
-    cardName: "Metaverse",
-    cardText: "Teenage girl with virtual reality headset.",
-    cardDataTime: "null",
-  },
-
-  {
-    id: "3",
-    cardImg:
-      "../assets/database/woman-in-glasses-augmented-reality-blue-social-media-cover_53876-97072.webp",
-    cardName: "Metaverse",
-    cardText: "Woman in vr  glasses augmented reality.",
-    cardDataTime: "null",
-  },
-  {
-    id: "4",
-    cardImg:
-      "../assets/database/young-woman-using-vr-glasses_23-2149437736.webp",
-    cardName: "Metaverse",
-    cardText: "Young woman using vr glasses.",
-    cardDataTime: "null",
-  },
-
-  {
-    id: "5",
-    cardImg:
-      "../assets/database/smart-attractive-asian-female-business-owner-weared-virtual-reality-glasses-enjoys-casual-metaverse-meeting-with-concentrate-at-cafe-restaurantasian-female-using-oculus-rift-headset-in-cafe_609648-2189.webp",
-    cardName: "Metaverse",
-    cardText: "Young asian female business woman using vr glasses.",
-    cardDataTime: "null",
-  },
-  {
-    id: "6",
-    cardImg:
-      "../assets/database/portrait-of-a-man-with-glasses-of-virtual-reality-vr-interacts-with-a-virtual-screen_99433-259.webp",
-    cardName: "Metaverse",
-    cardText:
-      "Man with glasses of virtual reality vr interacts with a virtual screen.",
-    cardDataTime: "null",
-  },
-  {
-    id: "7",
-    cardImg:
-      "../assets/database/portrait-of-a-man-with-glasses-of-virtual-reality-vr-interacts-with-a-virtual-screen_99433-249.webp",
-    cardName: "Metaverse",
-    cardText: "A Network of 3D virtual worlds focused on social connection.",
-    cardDataTime: "null",
-  },
-  {
-    id: "8",
-    cardImg:
-      "../assets/database/medium-shot-woman-wearing-vr-glasses_23-2148864930.webp",
-    cardName: "Metaverse",
-    cardText: " Woman wearing vr glasses_.",
-    cardDataTime: "null",
-  },
-
-  {
-    id: "9",
-    cardImg:
-      "../assets/database/man-experiencing-vr-simulation-entertainment-technology_53876-102991.webp",
-    cardName: "Metaverse",
-    cardText: "Man experiencing vr simulation entertainment technology.",
-    cardDataTime: "null",
-  },
-  {
-    id: "10",
-    cardImg:
-      "../assets/database/wondering-of-feelings-little-girl-or-child-in-jeans-and-shirt-with-virtual-reality-headset-glasses-isolated-on-blue-studio-background-concept-of-cutting-edge-technology-video-games-innovation_155003-36852.webp",
-    cardName: "Metaverse",
-    cardText: "Child with virtual reality technology video games innovation.",
-    cardDataTime: "null",
-  },
-  {
-    id: "11",
-    cardImg:
-      "../assets/database/a-man-with-glasses-on-the-background-of-virtual-reality-the-metaverse-future-metaphor-metaverse-technology-concept-cyberuniverse-communication-blockchain-futuristic-network-mixed-media_99433-8199.webp",
-    cardName: "Metaverse",
-    cardText:
-      "A man with glasses on the background of virtual reality the metaverse future.",
-    cardDataTime: "null",
-  },
-];
-let cartDataTime = null;
-let clients = null;
 const cartUser = [
   {
     title: "starstar ",
@@ -143,39 +28,100 @@ const cartUser = [
   },
 ];
 
-let modalSignIn = document.getElementById("modalSignIn");
+const inputEmail = document.getElementById("email");
+const inputPassword = document.getElementById("password");
+const btnSignInUser = document.getElementById("btn_sign_in_user");
+const loginAvatar = document.getElementById("headerAvatarId");
+const notLoginHead = document.getElementById("notLoginHeader");
+const avatarBtn = document.getElementById("avatar");
+const userMenuRegistered = document.getElementById("userMenuRegistered");
+const userMenuVectorRegistered = document.getElementById(
+  "userMenuVectorRegistered"
+);
+
+btnSignInUser.onclick = () => {
+  localStorage.setItem("userEmail", JSON.stringify(inputEmail.value));
+  inputEmail.value = null;
+  localStorage.setItem("userPassword", JSON.stringify(inputPassword.value));
+  inputPassword.value = null;
+  modalSignIn.style.display = "none";
+  notLoginHead.style.display = "none";
+  loginAvatar.style.display = "flex";
+};
+
 let closeSignIn = document.getElementById("closeSignIn");
 let openSignIn = document.getElementById("openSignIn");
-
 closeSignIn.onclick = () => {
   modalSignIn.style.display = "none";
 };
 openSignIn.onclick = () => {
   modalSignIn.style.display = "block";
 };
+const storedEmail = JSON.parse(localStorage.getItem("userEmail"));
+const storedPassword = JSON.parse(localStorage.getItem("userPassword"));
 
-// const generateDynamicCards = () => {
-//   const listShopVariant = document.getElementById("list-shop-variant");
-//   cards.forEach((article) => {
-//     const articleHtml = `
-//     <li class="list-variant-li"
-//   style="background-image: url(${article.cardImg});"
-//   id="${article.id}">
-//               <div class="grey-b">
-//                 <h4 class="card-subtaitle">${article.cardName}</h4>
-//                 <p class="card-text">${article.cardText} </p>
-//               </div>
-//             </li>
-//              `;
+avatarBtn.onclick = () => {
+  userMenuRegistered.style.display = "block";
+};
 
-//     const articleDiv = document.createElement("div");
-//     articleDiv.style.display = "flex";
-//     articleDiv.innerHTML = articleHtml;
-//     listShopVariant.appendChild(articleDiv);
-//   });
-// };
+userMenuVectorRegistered.onclick = () => {
+  userMenuRegistered.style.display = "none";
+};
+const cardManagement = document.getElementById("cardManagement");
+const closeAddingCart = document.getElementById("closeAddingCart");
+const modalAddingCart = document.getElementById("modalAddingCart");
 
-// generateDynamicCards();
+cardManagement.onclick = () => {
+  modalAddingCart.style.display = "block";
+
+  closeAddingCart.onclick = () => {
+    modalAddingCart.style.display = "none";
+    // modalAddingCart.innerHTML = "";
+  };
+};
+
+const click = document.getElementById("inputCardForm");
+const cards = JSON.parse(localStorage.getItem("cards") || "[]");
+const card = [];
+
+click.onsubmit = (e) => {
+  let inputCardName = document.getElementById("inputCardName").value;
+  let inputCardText = document.getElementById("inputCardDescription").value;
+  let inputCardImgName = document.getElementById("inputCardImageName").value;
+  let userCard = {
+    id: cards.length,
+    cardImg: inputCardImgName,
+    cardName: inputCardName,
+    cardText: inputCardText,
+    cardDataTime: Date.now(),
+  };
+  card.push(userCard);
+  localStorage.setItem("cards", JSON.stringify(card));
+};
+console.log(typeof cards);
+
+const generateDynamicCards = () => {
+  const listShopVariant = document.getElementById("list-shop-variant");
+  cards.forEach((article) => {
+    const articleHtml = `
+    <li class="list-variant-li"
+  style="background-image: url("${article.cardImg}");"
+  id="${article.id}">
+              <div class="grey-b">
+                <h4 class="card-subtaitle">${article.cardName}</h4>
+<p class="card-text">${article.cardText} </p>
+              </div>
+            </li>
+             `;
+
+    const articleDiv = document.createElement("div");
+    articleDiv.style.display = "flex";
+    articleDiv.innerHTML = articleHtml;
+    listShopVariant.appendChild(articleDiv);
+  });
+};
+
+generateDynamicCards();
 
 const itemsPerPage = 6;
 let currentPage = 1;
@@ -197,14 +143,17 @@ function changePage(page) {
     i++
   ) {
     output.innerHTML += `
-      <li class="list-variant-li"
-   style="background-image: url(${cards[i].cardImg});"
+    <button  class="modalMainBtn"  onclick="modalRender()">
+      <li  class="list-variant-li" 
+   style="background-image: url(../assets/database/${cards[i].cardImg}.webp);"
    id="${cards[i].id}">
                <div class="grey-b">
                  <h4 class="card-subtaitle">${cards[i].cardName}</h4>
                  <p class="card-text">${cards[i].cardText} </p>
                </div>
-            </li>`;
+            </li>
+            </button>
+           `;
   }
 }
 
@@ -232,37 +181,42 @@ window.onload = function () {
   addPages();
 };
 
+const openItemPage = document.getElementById("item-page");
+const homePageCards = document.getElementsByClassName("list-variant-li");
+modalRender = () => {
+  for (let i = 0; i < homePageCards.length; i++) {
+    homePageCards[i].onclick = () => {
+      openItemPage.style.display = "flex";
+      generateItemPage(homePageCards[i].id);
+    };
+  }
+};
+
+const closeDialog = () => {
+  mainItemPage.innerHTML = null;
+  openItemPage.style.display = "none";
+};
+
 const mainItemPage = document.getElementById("main-item-page");
 const generateItemPage = (id) => {
   const article = cards.find((item) => item.id == id);
+  console.log(cards[id].cardImg);
   const mainItemPageHtml = `
   <button id="closeItemPage"  class="mainBtn" onclick="closeDialog()">
   <span class="close-item-page">&times;</span>
   </button>
-      <img class="main-img" src="${article.cardImg}" alt="">
+      <img class="main-img" src="../assets/database/${cards[id].cardImg}.webp" alt="">
+      
       <div class="main-cart">
         <h4 class="header-title">${article.cardName}</h4>
         <p class="header-text">${article.cardText}</p>
         <button class="primary-btn">Get it Now</button>
-      </div>
-       
+      </div>  
     `;
+
   const articleDiv = document.createElement("div");
   articleDiv.innerHTML = mainItemPageHtml;
   mainItemPage.appendChild(articleDiv);
-};
-const homePageCards = document.getElementsByClassName("list-variant-li");
-const openItemPage = document.getElementById("item-page");
-
-for (let i = 0; i < homePageCards.length; i++) {
-  homePageCards[i].onclick = () => {
-    openItemPage.style.display = "flex";
-    generateItemPage(homePageCards[i].id);
-  };
-}
-const closeDialog = () => {
-  mainItemPage.innerHTML = null;
-  openItemPage.style.display = "none";
 };
 
 const generateDynamicClients = () => {
@@ -289,3 +243,28 @@ const generateDynamicClients = () => {
   });
 };
 generateDynamicClients();
+
+console.log(cards);
+
+function logOut() {
+  localStorage.clear();
+  document.getElementById("userMenuRegistered").style.display = "none";
+  window.location.reload();
+}
+
+const filter = document.getElementById("filter");
+console.log(filter.value);
+
+filter.onchange = () => {
+  if (filter.value == "sortNew") {
+    cards.sort((a, b) => b.cardDataTime - a.cardDataTime);
+    console.log(cards);
+  } else {
+    cards.sort((a, b) => a.cardDataTime - b.cardDataTime);
+    console.log(cards);
+  }
+
+  // listShopVariant.innerHTML = "";
+  // changePage(currentPage);
+  // clickItem();
+};

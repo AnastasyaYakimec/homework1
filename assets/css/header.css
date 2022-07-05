@@ -1,114 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter&display=swap");
 
-
-.header {
-    background-color: black;
-    max-width: 854px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
+.header-avatar {
+  background-color: black;
+  max-width: 854px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  margin-bottom: 200px;
+  display: none;
+  left: 26%;
 }
 
-.header-wrap {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15px;
+.header-wrap-avatar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  width: 600px;
 }
 
-.container {
-    max-width: 770px;
-    margin: 0 auto;
-    padding: 0 65px;
-    padding-left: 5px;
-
+.container-avatar {
+  /* max-width: 770px; */
+  /* padding: 0 65px; */
+  padding-left: 5px;
 }
 
-.header-ellipse {
-    position: absolute;
-    left: -30px;
-    width: 100%;
-    max-width: 572px;
+.header-ellipse-avatar {
+  position: absolute;
+  left: -30px;
+  width: 100%;
+  max-width: 572px;
+  z-index: -1;
 }
 
-.header_logo {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 32px;
-    font-family: 'IM FELL Great Primer SC ';
-    padding-right: 50px;
+.header_logo-avatar {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 32px;
+  font-family: "IM FELL Great Primer SC ";
 }
 
-.header_nav {
-    width: 100%;
-    max-width: 372px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.header_nav-avatar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.nav-list {
-    display: flex;
-    align-items: center;
+.nav-list-avatar {
+  display: flex;
+  align-items: center;
 }
 
-.nav-list_item:not(:last-child) {
-    margin-right: 34px;
+.nav-list_item-avatar:not(:last-child) {
+  margin-right: 34px;
 }
 
-.nav-list_link {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 15px;
-    color: white;
-    align-items: center;
-    display: inline-flex;
-    flex-direction: column;
+.nav-list_link-avatar {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  color: white;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
 }
 
-.nav-list_link:hover {
-    font-weight: 500;
-    color: #DF308D;
+.nav-list_link-avatar:hover {
+  font-weight: 500;
+  color: #df308d;
 }
 
-.nav-list_link:hover::after {
-    content: "";
-    background-color: white;
-    height: 3px;
-    width: 10px;
-    position: absolute;
-    margin-top: 20px;
+.nav-list_link-avatar:hover::after {
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 10px;
+  position: absolute;
+  margin-top: 20px;
 }
 
 @media (max-width: 576px) {
-    .header {
-        width: 100%;
-    }
-    .header_nav {
-        border: 1px solid green;
-        display: flex;
-    }
+  .header-avatar {
+    width: 100%;
+  }
+  .header_nav-avatar {
+    border: 1px solid green;
+    display: flex;
+  }
 
-    .nav-list {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        border: 2px solid red;
-    }
+  .nav-list-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 2px solid red;
+  }
 
-    .header_logo {
-        display: none;
-    }
+  .header_logo-avatar {
+    display: none;
+  }
 
-    .header-ellipse {
-        display: none;
-    }
+  .header-ellipse-avatar {
+    display: none;
+  }
 
-    .nav-list_link {
-        font-size: 12px;
-    }
-
-
+  .nav-list_link-avatar {
+    font-size: 12px;
+  }
 }

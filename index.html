@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="./assets/css/burger-menu.css">
   <link rel="stylesheet" href="./assets/css/signin.css">
   <link rel="stylesheet" href="./assets/css/itempage.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/usermenu.css">
+  <link rel="stylesheet" href="./assets/css/card.css">
   <title>Virtual</title>
 </head>
 
@@ -18,7 +21,7 @@
   <div class="wrapper">
     <div class="container">
       <img class="headerellipse" src="./assets/icon/headerellipse.svg" alt="">
-      <div class="header">
+      <div id="notLoginHeader" class="header">
         <a href="index.html" class="header_logo">
           Light
         </a>
@@ -90,7 +93,7 @@
           </div>
           <div class="box-text">
             <h4 class="box-title">New Experience In Playing Game</h4>
-            <p class="box-text-p">
+            <p " class=" box-text-p">
               You can try playing the game with a new style and of course a more
               real feel, like you are the main character in your game and
               adventure in this new digital world.
@@ -106,9 +109,14 @@
         <div class="box2">
           <h3 class="box2-subtaitle">Mixed Reality Headsets</h3>
           <div class="border-vector-text">
-            <img class="border-img" src="./assets/img/outline bg.svg" alt="">
+            <!-- <img class="border-img" src="./assets/img/outline bg.svg" alt="">
             <span class=" border-text">New first</span>
             <img class="border-vector" src="./assets/img/vector btn.svg" alt="">
+          -->
+            <select id="filter">
+              <option value="sortNew" selected>New First</option>
+              <option value="sortOld">Old First</option>
+            </select>
           </div>
         </div>
         <div class="card">
@@ -205,9 +213,9 @@
       <main id="modalSignIn" class="sign-in">
         <h1 class="sign-in_title">Sign in</h1>
         <form class="sign-in_form" action="#">
-          <input class="email input" type="email" name="email" placeholder="Email or username">
-          <input class="password input" type="password" name="password" placeholder="Password">
-          <button class="btn">Sign in</button>
+          <input id="email" class="email input" type="email" name="email" placeholder="Email or username">
+          <input id="password" class="password input" type="password" name="password" placeholder="Password">
+          <button class="btn" id='btn_sign_in_user'>Sign in</button>
         </form>
         <span id="closeSignIn" class="close">&times;</span>
         <div class="img"><img class="ellipse-right" src="./assets/icon/ellipse2.svg" alt=""></div>
@@ -261,6 +269,61 @@
   </div>
   </div>
   </div>
+  <header id="headerAvatarId" class="header-avatar ">
+    <div class="container-avatar">
+      <img class="header-ellipse-avatar" src="./assets/icon/headerellipse.svg" alt="">
+      <div class="header-wrap-avatar">
+        <a class="header_logo-avatar" href="index.html">
+          Light
+        </a>
+        <nav class="header_nav-avatar">
+          <ul class="nav-list-avatar">
+            <li class="nav-list_item-avatar">
+              <a href="/home" class="nav-list_link-avatar">Home</a>
+            </li>
+            <li class="nav-list_item-avatar">
+              <a href="/company" class="nav-list_link-avatar">Company</a>
+            </li>
+            <li class="nav-list_item-avatar">
+              <a href="/features" class="nav-list_link-avatar">Features</a>
+            </li>
+            <img id="avatar" class="smallavatar" src="./assets/img/smallavatar.svg" alt="">
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+  <div id="userMenuRegistered" class="user-menu-registered">
+    <div class="header-registered">
+      <h4 class="user-menu-title-registered">User menu</h4>
+      <link rel="stylesheet" href="./assets/css/reset.css">
+      <img id="userMenuVectorRegistered" class="user-menu-vector-registered" src="./assets/img/Vector(14).svg" alt="">
+    </div>
+    <ul class="menu-registered">
+      <li class="menu-item-registered">Recently Added</li>
+      <li id="cardManagement" class="menu-item-registered">Card management</li>
+      <li class="menu-item-registered">Log out</li>
+
+    </ul>
+  </div>
+
+
+  <main id="modalAddingCart" class="adding-cart">
+    <img class="img-group" src="./assets/img/Group 34.svg" alt='' }>
+    <h1 class="adding-cart_title">Add new card</h1>
+    <form action="" id="inputCardForm" class="adding-cart-form">
+      <input id="inputCardName" class="adding-cart-form_input" type="text" name="card name" placeholder="Card name">
+      <input id="inputCardDescription" class="adding-cart-form_input" type="text" name="card description"
+        placeholder="Card description">
+      <input id="inputCardImageName" class="adding-cart-form_input" type="text" name="card image name"
+        placeholder="Card image name">
+      <button id="qwerty" class="btn"><span>Add</span></button>
+    </form>
+    <span id="closeAddingCart" class="close">&times;</span>
+    <div class="img"><img class="ellipse-right" src="./assets/icon/ellipse2.svg" alt=""></div>
+  </main>
+
   <script src="./scripts/index.js">
 
   </script>
